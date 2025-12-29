@@ -1,17 +1,16 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
     margin: 0;
-    padding: 0;
     color: #333;
 }
 
 .container {
     max-width: 900px;
     margin: 30px auto;
-    background: #ffffff;
+    background: #fff;
     padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 header {
@@ -20,56 +19,115 @@ header {
     padding-bottom: 20px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 32px;
+h1 { margin: 0; font-size: 32px; }
+h2 { color: #555; font-size: 18px; }
+
+.contact a { color: #2563eb; text-decoration: none; }
+
+.hire-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-h2 {
-    margin: 5px 0 10px;
-    font-size: 18px;
-    color: #555;
+section { margin-top: 30px; }
+h3 { border-bottom: 2px solid #2563eb; padding-bottom: 5px; }
+
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
+
+.architecture {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
 }
 
-.contact a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-section {
-    margin-top: 25px;
-}
-
-h3 {
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 5px;
-    color: #1f2937;
-}
-
-h4 {
-    margin-bottom: 5px;
-}
-
-.duration, .tech {
-    font-size: 14px;
-    color: #555;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 8px;
-}
-
-.skills li {
-    list-style-type: square;
-}
+.note { font-size: 13px; color: #666; }
 
 footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 14px;
     color: #777;
+}
+
+/* Floating Buttons */
+.floating-actions {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fab {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.github { background: #111827; }
+.dark { background: #6b7280; }
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content span {
+    float: right;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #111827;
+    color: #e5e7eb;
+}
+body.dark .container {
+    background: #1f2937;
+}
+body.dark a { color: #93c5fd; }
+
+/* Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: reveal 0.8s forwards;
+}
+@keyframes reveal {
+    to { opacity: 1; transform: none; }
+}
+
+/* Print */
+@media print {
+    .floating-actions, .hire-btn { display: none; }
+    body { background: #fff; }
+    .container { box-shadow: none; }
 }
