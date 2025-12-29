@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+h2 {
+    margin: 5px 0 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 25px;
+}
+
+h3 {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+    color: #1f2937;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.duration, .tech {
+    font-size: 14px;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.skills li {
+    list-style-type: square;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
