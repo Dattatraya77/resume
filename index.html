@@ -56,10 +56,12 @@
     <section class="reveal">
         <h3>Professional Summary</h3>
         <p>
-            Senior Django Developer / Python Backend Engineer with 5+ years of experience building
-            enterprise-grade, multi-tenant SaaS platforms. Expert in Django, DRF, PostgreSQL,
-            metadata-driven systems, and workflow automation. Delivered platforms used by 30+ tenants,
-            managing 50k+ documents and reducing document creation time by ~50%.
+            Senior Django Developer / Python Backend Engineer with 5+ years of experience designing and developing enterprise-grade, 
+            multi-tenant SaaS applications. Strong expertise in Django, Django REST Framework (DRF), Python, PostgreSQL, 
+            and metadata-driven architectures. Proven experience in Document Management Systems (DMS), Contract Management, 
+            Dynamic Invoice Generation, Workflow Automation, and Project Management platforms. 
+            Delivered scalable backend systems used by 30+ tenants, processing 50k+ documents, 
+            and achieving ~50% reduction in document creation time through automation, templates, and optimized workflows.
         </p>
     </section>
 
@@ -67,24 +69,24 @@
     <section class="reveal">
         <h3>Core Skills</h3>
         <ul>
-            <li><strong>Backend:</strong> Python, Django, DRF, REST APIs</li>
-            <li><strong>Architecture:</strong> Multi-Tenant SaaS, django-tenants, RBAC</li>
-            <li><strong>Database:</strong> PostgreSQL, ORM Optimization</li>
-            <li><strong>Async:</strong> Celery, Redis, Django-Q</li>
-            <li><strong>Docs:</strong> DMS, Contracts, DOCX/XLSX Automation</li>
-            <li><strong>Security:</strong> JWT, DocuSign, Azure AD</li>
+            <li><strong>Programming & Backend:</strong> Python, Django, Django REST Framework (DRF), REST APIs</li>
+            <li><strong>Architecture & Design:</strong> Multi-Tenant SaaS, django-tenants (schema-based), Metadata-Driven Systems, RBAC</li>
+            <li><strong>Databases:</strong> PostgreSQL, MySQL, SQLite, MVC/MVT Architecture, ORM Optimization</li>
+            <li><strong>Frontend (Working Knowledge):</strong> HTML, CSS, Bootstrap, JavaScript, Ajax</li>
+            <li><strong>Async & Workflow:</strong> Celery, Redis, Django-Q, Background Jobs, Scheduled Tasks</li>
+            <li><strong>Authentication & Security:</strong> JWT (SimpleJWT), Role-Based Access Control, Azure AD, DocuSign, Google Vision API, Email (SMTP)</li>
+            <li><strong>DevOps & Tools (Basic):</strong> Git, GitHub, Linux, Gunicorn, Multi-Tenant Deployment</li>
         </ul>
     </section>
 
     <!-- ARCHITECTURE -->
     <section class="reveal">
-        <h3>Platform Architecture (High Level)</h3>
+        <h3>Platform Architecture</h3>
         <p>
             Multi-tenant SaaS architecture using PostgreSQL schema isolation, metadata-driven engines,
             asynchronous processing, and secure document workflows.
         </p>
-        <img src="architecture.png" alt="SaaS Architecture Diagram" class="architecture">
-        <p class="note">*(Replace architecture.png with your diagram when ready)*</p>
+        <img src="architecture.png" alt="SaaS Architecture Diagram" class="architecture">       
     </section>
 
     <!-- EXPERIENCE -->
@@ -93,10 +95,12 @@
         <h4>Senior Django Developer — Virtualwebs Servers Pvt. Ltd</h4>
         <p class="duration">Oct 2020 – Present</p>
         <ul>
-            <li>Led backend development of multi-tenant SaaS platforms using Django and django-tenants.</li>
-            <li>Designed secure REST APIs with JWT authentication and RBAC.</li>
-            <li>Implemented document workflows, approvals, and audit trails.</li>
-            <li>Optimized performance via indexing, ORM tuning, and async processing.</li>
+            <li>Led backend development of a large-scale, multi-tenant Document Management System (DMS) serving multiple enterprise clients using django-tenants (PostgreSQL schema-based multi-tenancy).</li>
+            <li>Architected and implemented shared and tenant-specific Django applications, including custom middleware, routing logic, and PostgreSQL schema-based database isolation.</li>
+            <li>Implemented Role-Based Access Control (RBAC) using Django Groups and permissions to secure documents, templates, metadata, and workflows.</li>
+            <li>Designed and developed secure RESTful APIs using Django REST Framework (DRF) with JWT authentication (SimpleJWT) and role-based authorization.</li>
+            <li>Built asynchronous processing and notification systems using Celery, Django-Q, Redis, and django-celery-beat for emails, scheduled jobs, and background tasks.</li>
+            <li>Implemented state-driven approval workflows using django-river to manage document lifecycle states, approvals, and status transitions.</li>
         </ul>
     </section>
 
@@ -104,19 +108,17 @@
     <section class="reveal">
         <h3>Key Projects</h3>
 
-        <h4>Enterprise Document & Contract Management System</h4>
+        <h4>Enterprise Platform – Secure Document Management System, Contract Management, Project Management & Dynamic Invoice Generation (Multi-Tenant SaaS)</h4>
+        <h4><strong>Tech Stack:</strong> Django, Python, DRF, django-tenants, PostgreSQL, Celery, Redis, DocuSign, OpenPyXL, python-docx, CKEditor</h4>
         <ul>
-            <li>30+ tenants, 50k+ documents, secure digital vault</li>
-            <li>Metadata-driven search and auto-extraction</li>
-            <li>Audit trails, eSign, compliance-ready</li>
-        </ul>
-
-        <h4>Business Process Automation & Invoice Platform</h4>
-        <ul>
-            <li>Dynamic DOCX/XLSX invoice generation</li>
-            <li>~50% faster document creation</li>
-            <li>Workflow automation with approvals</li>
-        </ul>
+            <li>Built and scaled a multi-tenant enterprise SaaS platform used by 30+ tenants, managing 50k+ documents with high availability and strict tenant isolation.</li>
+            <li>Designed a Secure Digital Vault with complete document audit trails (upload, view, download, edit, email, signature), ensuring compliance and protection of high-value documents.</li>
+            <li>Implemented intelligent document mapping and metadata auto-extraction, enabling fast uploads, instant search ability, and seamless onboarding of 100% legacy documents from day one.</li>
+            <li>Developed user-defined, reusable templates for documents and contracts, enabling error-free creation and preventing cross-customer data leakage.</li>
+            <li>Built document & contract intelligence to search and report on clauses, terms, and metadata across hundreds of contracts in minutes instead of days.</li>
+            <li>Integrated project management with tasks, priorities, progress tracking, attachments, signatures, and role-based visibility in a single unified system.</li>
+            <li>Built a metadata-driven invoice creation system generating Excel (.xlsx) and DOCX invoices from dynamic templates.</li>
+        </ul>        
     </section>
 
     <footer>
@@ -155,6 +157,7 @@ function closeModal() {
 
 </body>
 </html>
+
 
 
 
