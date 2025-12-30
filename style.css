@@ -131,3 +131,24 @@ body.dark a { color: #93c5fd; }
     body { background: #fff; }
     .container { box-shadow: none; }
 }
+/* LinkedIn-style Architecture Banner */
+.linkedin-banner {
+    width: 100%;
+    max-height: 400px;      /* LinkedIn background height */
+    object-fit: contain;    /* Show full diagram clearly */
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Dark mode adjustment */
+body.dark .linkedin-banner {
+    background: #1e1e1e;
+}
+@media print {
+    .linkedin-banner {
+        max-height: 300px;
+        page-break-inside: avoid;
+    }
+}
+
