@@ -112,8 +112,9 @@
     </section>
 
     <footer>
-        © 2025 Dattatraya Walunj | Senior Django Developer
+        © <span id="yearRange"></span> Dattatraya Walunj | Senior Django Developer
     </footer>
+
 </div>
 
 <!-- FLOATING ACTIONS -->
@@ -134,19 +135,35 @@
 </div>
 
 <script>
-function toggleDark() {
-    document.body.classList.toggle("dark");
-}
-function openModal() {
-    document.getElementById("modal").style.display = "flex";
-}
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
-}
+    function toggleDark() {
+        document.body.classList.toggle("dark");
+    }
+    function openModal() {
+        document.getElementById("modal").style.display = "flex";
+    }
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+    }
+    // Auto-update footer year range
+    const startYear = 2020;
+    const currentYear = new Date().getFullYear();
+    document.getElementById("yearRange").textContent =
+        startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+
+    function toggleDark() {
+        document.body.classList.toggle("dark");
+    }
+    function openModal() {
+        document.getElementById("modal").style.display = "flex";
+    }
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+    }
 </script>
 
 </body>
 </html>
+
 
 
 
